@@ -1,0 +1,36 @@
+/* src/styles/Home.module.css */
+.button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #388e3c;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}

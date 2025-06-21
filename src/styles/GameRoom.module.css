@@ -1,0 +1,148 @@
+/* src/styles/GameRoom.module.css */
+.button:hover {
+    background-color: #c62828;
+}
+
+.card {
+    padding: 10px 14px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.controls button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.controls button:hover {
+    background-color: #45a049;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.highlightButton {
+    border: 2px solid #ff9800;
+    background-color: #409b39 !important;
+    color: white;
+}
+
+.message {
+    margin-top: 16px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.phaseIndicator {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.phaseDiscard {
+    background-color: #fff9c4;
+    color: #f57f17;
+}
+
+.phaseDraw {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}
+
+.phaseYaniv {
+    background-color: #b3e5fc;
+    color: #01579b;
+}
+
+.phaseWait {
+    background-color: #eeeeee;
+    color: #616161;
+}
+
+.playerBox {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.ready {
+    color: green;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+.rematchButton {
+    border: 6px 4px solid #653bff;
+    background-color: #653bff !important;
+    color: white;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.selected {
+    background-color: #ffeb3b;
+    border-color: #fbc02d;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: #333;
+}
+  
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
